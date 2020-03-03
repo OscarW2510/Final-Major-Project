@@ -14,6 +14,14 @@ public class Movement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Collectable"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);  
