@@ -16,4 +16,5 @@ public class BeginGame : MonoBehaviour
         Destroy(this);
     }
 
+ 
 }
