@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-
+    public Scene SceneToRestart;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -47,5 +47,16 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Quitting game...");
         Application.Quit();
+    }
+
+    public void Restart()
+    {
+        Application.LoadLevel(Application.loadedLevelName);
+
+    }
+
+    public void CompleteRestart()
+    {
+        Application.LoadLevel(SceneToRestart.handle);
     }
 }
