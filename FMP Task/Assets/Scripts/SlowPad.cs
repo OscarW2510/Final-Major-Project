@@ -13,6 +13,6 @@ public class SlowPad : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         Movement movement = FindObjectOfType<Movement>();
-        movement.speed = 4;
+        movement.speed = 3f;
     }
 }
