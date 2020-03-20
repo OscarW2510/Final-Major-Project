@@ -6,6 +6,7 @@ public class SlowPad : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
+        SoundManagerScript.PlaySound("Splash");
         Movement movement = FindObjectOfType<Movement>();
         movement.speed = 1; 
     }

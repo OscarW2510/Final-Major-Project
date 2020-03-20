@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectable"))
         {
+            SoundManagerScript.PlaySound("Coins");
             Destroy(other.gameObject);
         }
     }
