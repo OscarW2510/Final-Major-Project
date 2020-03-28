@@ -9,7 +9,7 @@ public class ClueMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, 0.04f);
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, 0.03f);
 
         Vector2 currentposition = new Vector2(transform.position.x, transform.position.y);
 
