@@ -10,5 +10,12 @@ public class ClueMovement : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, 0.04f);
+
+        Vector2 currentposition = new Vector2(transform.position.x, transform.position.y);
+
+        if (currentposition == targetPosition)
+        {
+            Destroy(gameObject);
+        }
     }
 }

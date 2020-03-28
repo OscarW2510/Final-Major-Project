@@ -19,11 +19,13 @@ public class BeginGame : MonoBehaviour
             clueMovement.targetPosition = i.transform.position;
 
             Destroy(i);
+
         }
         
 
 
         Destroy(this);
+       
     }
 
         
