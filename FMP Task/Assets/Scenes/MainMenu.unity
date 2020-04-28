@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -332,7 +332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &320525333
 RectTransform:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012398, y: -185.1}
+  m_AnchoredPosition: {x: -0.000012398, y: -245.4}
   m_SizeDelta: {x: 392.94, y: 109.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737189987
@@ -628,8 +628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- After you have collected all the items then the exit will be avalible
-    to find '
+  m_Text: '- After all items have been collected the exit will open'
 --- !u!222 &737189988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -653,7 +652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &839577718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -670,7 +669,6 @@ RectTransform:
   - {fileID: 2058077448}
   - {fileID: 1876211683}
   - {fileID: 737189986}
-  - {fileID: 1709284689}
   m_Father: {fileID: 31822536}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1134,86 +1132,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657208498}
   m_CullTransparentMesh: 0
---- !u!1 &1709284688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1709284689}
-  - component: {fileID: 1709284691}
-  - component: {fileID: 1709284690}
-  m_Layer: 5
-  m_Name: Text (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1709284689
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709284688}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 839577718}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -269.9}
-  m_SizeDelta: {x: 392.94, y: 109.36}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1709284690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709284688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: a97152d298875f64ea872db9dffbe216, type: 3}
-    m_FontSize: 28
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 3
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: '- The symbol that the player is playing as is ONE OF THE MANY SYMBOLS FOR
-    HOPE'
---- !u!222 &1709284691
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709284688}
-  m_CullTransparentMesh: 0
 --- !u!1 &1768537605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,7 +1519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -93.2}
+  m_AnchoredPosition: {x: 0, y: -145.7}
   m_SizeDelta: {x: 392.94, y: 109.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1876211684
@@ -1637,8 +1555,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- The speech/thought bubbles are triggers and they are colour coded to
-    what they open'
+  m_Text: '- The speech bubbles are triggers and they are colour coded to what they
+    open'
 --- !u!222 &1876211685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1825,7 +1743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076293945, y: -19.2}
+  m_AnchoredPosition: {x: -0.0000076293945, y: -43.1}
   m_SizeDelta: {x: 392.94, y: 109.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2058077449
@@ -1861,7 +1779,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Movement: W,A,S,D and the Arrow keys can be used to move'
+  m_Text: '- Movement: W,A,S,D and the Arrow keys'
 --- !u!222 &2058077450
 CanvasRenderer:
   m_ObjectHideFlags: 0
